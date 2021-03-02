@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ruby Prime</title>
+		<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+		<link rel="stylesheet" href="assets/fontawesome/css/all.css">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<!-- Primary #0B315E -->
+		<!-- Secondary #FAF5EF -->
+		<!-- Yellow #FDC300 -->
+		<!-- Black #1F1F1F -->
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="nav-main">
+				<img src="https://www.seekpng.com/png/full/79-790223_text-circle-png-red-circle-around-text.png" class="logo" title="Ruby" alt="Logo Ruby">
+				<button class="responsivity-button" id="btn-menu"><i class="fas fa-bars"></i></button>	
+			</div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruby Prime</title>
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Primary #0B315E -->
-    <!-- Secondary #FAF5EF -->
-    <!-- Yellow #FDC300 -->
-    <!-- Black #1F1F1F -->
-</head>
-
-<body>
-	<div class="navbar">
-		<div>
-			<img src="" title="Ruby" alt="Logo Ruby">
+			<div class="nav-menu" id="nav-menu">
+				<a href="#inicio" class="active">Início</a>
+				<a href="#habilidades">Habilidades</a>
+				<a href="#sobre-nos">Sobre nós</a>
+				<a href="#contato">Contato</a>
+			</div>
+		</div> 
+		<div id="inicio" class="first-container">
+			<div class="title">
+				<strong>Turbine seu negócio</strong> com nossas soluções digitais!
+			</div>
+			<div class="subtitle">
+				Sua companhia de desenvolvimento de software em <strong>Leopoldina, MG</strong>!
+			</div>
+			<div class="button-container">
+				<button type="button" class="button click-me">Contrate <strong>agora</strong></button>
+				<span>ou</span>
+				<button type="button" class="button"><span><strong>Agende</strong> a contratação</span></button>
+			</div>
 		</div>
-		<div>
-			<a>
-				Contrate
-			</a>
-			<a>
-				Sobre Nós
-			</a>
-		</div>
-	</div>
 
+		<div class="second-container">
+			<div class="content-wrapper">
+				<div class="skills">
 
-    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
-</body>
+				</div>
+				<div class="tecnologies">
 
+				</div>
+			</div>
+		</div>		
+		<script>document.getElementById('btn-menu').addEventListener('click', e => document.getElementById('nav-menu').classList.toggle('show'));</script>
+	</body>
 </html>
