@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-html, body {
+body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
-  color: #1F1F1F;
-  background-color: #fcfcfd;
+  color: #0B315E;
+  background-color: #FAF5EF;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -24,7 +26,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fcfcfd;
+  background-color: #FAF5EF;
 }
 
 .navbar .nav-main {
@@ -49,8 +51,8 @@ html, body {
   font-size: 30px;
 }
 
-.navbar .nav-main .responsivity-button svg path {
-  color: #0bb7e8;
+.navbar .nav-main .responsivity-button i {
+  color: #0B315E;
 }
 
 .navbar .nav-main .responsivity-button:focus {
@@ -63,7 +65,7 @@ html, body {
 
 .navbar .nav-menu a {
   text-decoration: none;
-  color: #686868;
+  color: #0B315E;
   margin-left: 10px;
   margin-right: 10px;
   -webkit-transition: .3s;
@@ -79,7 +81,7 @@ html, body {
 }
 
 .navbar .active {
-  color: #1F1F1F;
+  color: #0B315E;
 }
 
 @media (max-width: 1015px) {
@@ -104,8 +106,6 @@ html, body {
     padding-right: 20px;
     width: 100%;
     z-index: 2;
-    -webkit-box-shadow: 0 2px 0 black;
-            box-shadow: 0 2px 0 black;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -113,6 +113,10 @@ html, body {
   .navbar .nav-main .responsivity-button {
     display: block;
     margin-right: 10px;
+  }
+  .navbar .over {
+    -webkit-box-shadow: 0 2px 0 #0B315E;
+            box-shadow: 0 2px 0 #0B315E;
   }
   .navbar .nav-menu {
     display: none;
@@ -131,7 +135,7 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #f3f3f7;
+    background-color: #f8f0e7;
     width: 100%;
     padding: 20px;
   }
@@ -150,15 +154,14 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 30%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .first-container .title {
@@ -171,7 +174,7 @@ html, body {
 }
 
 .first-container .subtitle {
-  color: #686868;
+  color: #393939;
   padding: 10px;
   padding-bottom: 30px;
   font-size: 20pt;
@@ -205,13 +208,13 @@ html, body {
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
   font-size: 18pt;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .first-container .button-container .button strong {
   border: none;
   text-decoration: none;
-  color: #1F1F1F;
+  color: #0B315E;
 }
 
 .first-container .button-container .button:hover {
@@ -220,7 +223,7 @@ html, body {
 
 .first-container .button-container .click-me {
   border: unset;
-  background-color: #0bb7e8;
+  background-color: #0B315E;
   color: #fcfcfd;
 }
 
@@ -231,7 +234,7 @@ html, body {
 
 .first-container .button-container .click-me:hover {
   text-decoration: none;
-  background-color: #0991b7;
+  background-color: #1661b9;
 }
 
 @media (max-width: 1015px) {
@@ -248,6 +251,149 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #0B315E;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: #fcfcfd;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 2.5px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content-wrapper .content {
+  padding: 10px calc(((50% - 2.5px) - 40%) / 2);
+  position: relative;
+  background-color: inherit;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-wrapper .content::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #0B315E;
+  border: 4px solid #fcfcfd;
+  top: 30px;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content-wrapper .content .info {
+  width: 100%;
+  background-color: #fcfcfd;
+  position: relative;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content-wrapper .content .info h3 {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 16pt;
+}
+
+.content-wrapper .content .info h3 strong {
+  color: #1F1F1F;
+}
+
+.content-wrapper .content .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 25px;
+  width: 0;
+  right: 0;
+  left: 100%;
+  z-index: 1;
+  border: medium solid #fcfcfd;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fcfcfd;
+}
+
+.content-wrapper .content .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 25px;
+  width: 0;
+  right: 100%;
+  z-index: 1;
+  border: medium solid #fcfcfd;
+  border-width: 10px 10px 10px 10px;
+  border-color: transparent #fcfcfd transparent transparent;
+}
+
+.content-wrapper > .left::after {
+  left: calc(100% - 13px);
+}
+
+.content-wrapper > .right {
+  left: calc(50% + 2.5px);
+}
+
+.content-wrapper > .right::after {
+  right: calc(100% - 13px);
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .content-wrapper::after {
+    left: 31px;
+  }
+  .content-wrapper .content {
+    width: 80%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .content-wrapper .content::before {
+    left: 60px;
+    border: medium solid #fcfcfd;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fcfcfd transparent transparent;
+  }
+  .content-wrapper .left::after {
+    left: 15px;
+  }
+  .content-wrapper .left::before {
+    left: unset !important;
+    right: 100% !important;
+    border-width: 10px 10px 10px 10px !important;
+    border-color: transparent #fcfcfd transparent transparent !important;
+  }
+  .content-wrapper .right {
+    left: 0%;
+  }
+  .content-wrapper .right::after {
+    left: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -6,9 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ruby Prime</title>
-	<!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+
+
 	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
+
+
 	<!-- Primary #0B315E -->
 	<!-- Secondary #FAF5EF -->
 	<!-- Yellow #FDC300 -->
@@ -17,7 +20,7 @@
 
 <body>
 	<div class="navbar">
-		<div class="nav-main">
+		<div class="nav-main" id="navbar-main">
 			<img src="https://www.seekpng.com/png/full/79-790223_text-circle-png-red-circle-around-text.png"
 				class="logo" title="Ruby" alt="Logo Ruby">
 			<button class="responsivity-button" id="btn-menu"><i class="fas fa-bars"></i></button>
@@ -49,12 +52,23 @@
 		<div class="content-wrapper">
 			<div class="content left" id="services">
 				<div class="info left">
-					<h3>Serviços oferecidos</h3>
-					<ul>
-						<li>Desenvolvimento de websites</li>
-						<li>Desenvolvimento de aplicativos</li>
-						<li>Desenvolvimento de sistemas</li>
-					</ul>
+					<h3>Desenvolvimento de <strong>websites</strong></h3>
+				</div>
+			</div>
+			<div class="content right">
+				<div class="info right">
+					<h3>Desenvolvimento de <strong>aplicativos</strong></h3>
+				</div>
+			</div>
+			<div class="content left">
+				<div class="info left">
+					<h3>Desenvolvimento de <strong>sistemas</strong></h3>
+				</div>
+			</div>
+			<div class="content right">
+				<div class="info right">
+					<h3>Habilidades de Frontend</h3>
+					
 				</div>
 			</div>
 			<div class="content right" id="skills">
@@ -111,7 +125,7 @@
 		</div>
 	</div>
 
-	<script>document.getElementById('btn-menu').addEventListener('click', e => document.getElementById('nav-menu').classList.toggle('show'));</script>
+	<script src="assets/js/landing.js"></script>
 </body>
 
 </html>
