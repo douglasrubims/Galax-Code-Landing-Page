@@ -2,11 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 50%;
 	align-items: center;
 	justify-content: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 100px;
+	padding-bottom: 150px;
 
 	.title {
 		padding: 20px;
@@ -18,7 +17,7 @@
 	}
 
 	.subtitle {
-		color: #686868;
+		color: lighten(#1F1F1F, 10%);
 		padding: 10px;
 		padding-bottom: 30px;
 		font-size: 20pt;
@@ -46,7 +45,7 @@
 			strong {
 				border: none;
 				text-decoration: none;
-				color: #1F1F1F;
+				color: #0B315E;
 			}
 
 			&:hover {
@@ -56,7 +55,7 @@
 
 		.click-me {
 			border: unset;
-			background-color: #0bb7e8;
+			background-color: #0B315E;
 			color: #fcfcfd;
 
 			strong {
@@ -66,7 +65,7 @@
 
 			&:hover {
 				text-decoration: none;
-				background-color: darken(#0bb7e8, 10%);
+				background-color: lighten(#0B315E, 20%);
 			}
 		}
 	}
