@@ -5,7 +5,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #fcfcfd;
+	background-color: #FAF5EF;
 
 	.nav-main {
 		display: flex;
@@ -22,10 +22,8 @@
 			background-color: unset;
 			font-size: 30px;
 	
-			svg {
-				path {
-					color: #0bb7e8;
-				}
+			i {
+				color: #0B315E;
 			}
 	
 			&:focus {
@@ -39,7 +37,7 @@
 
 		a {
 			text-decoration: none;
-			color: #686868;
+			color: #0B315E;
 			margin-left: 10px;
 			margin-right: 10px;
 			transition: .3s;
@@ -55,7 +53,7 @@
 	}
 
 	.active {
-		color: #1F1F1F;
+		color: #0B315E;
 	}
 }
 
@@ -73,15 +71,16 @@
 
 			z-index: 2;
 
-			box-shadow: 0 2px 0 black;
-
-
 			justify-content: space-between;
 
 			.responsivity-button {
 				display: block;
 				margin-right: 10px;
 			}
+		}
+
+		.over {
+			box-shadow: 0 2px 0 #0B315E;
 		}
 
 		.nav-menu {
@@ -94,7 +93,7 @@
 			align-items: center;
 			justify-content: center;
 
-			background-color: darken(#fcfcfd, 3);
+			background-color: darken(#FAF5EF, 2%);
 
 			a {
 				font-size: 20pt;
