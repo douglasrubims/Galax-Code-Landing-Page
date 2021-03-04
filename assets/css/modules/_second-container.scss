@@ -1,0 +1,131 @@
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color:#0bb7e8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        left: calc(50% - 2.5px);
+    }
+
+    .content {
+        padding: 10px calc(((50% - 2.5px) - 40%)/2);
+        position: relative;
+        background-color: inherit;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border: 4px solid #ff9f55;
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .info {
+            width: 100%;
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 25px;
+        }
+
+        .left {
+            &::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 30px;
+                width: 0;
+                right: 0;
+                left: 100%;
+                z-index: 1;
+                border: medium solid white;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent white;
+            }
+        }
+
+        .right {
+            &::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 30px;
+                width: 0;
+                left: 0;
+                right: calc(100% + 10px);
+                z-index: 1;
+                border: medium solid white;
+                border-width: 10px 10px 0 10px;
+                border-color: transparent transparent transparent white;
+            }
+        }
+    }
+
+    & > .left {
+        &::after {
+            left: calc(100% - 13px);
+        }
+    }
+
+    & > .right {
+        left: calc(50% + 2.5px);
+
+        &::after {
+            right: calc(100% - 13px);
+        }
+    }
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+    .content-wrapper {
+        &::after {
+            left: 31px;
+        }
+
+        .content {
+            width: 80%;
+            padding-left: 70px;
+            padding-right: 25px;
+
+            &::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+        }
+
+        .left {
+            &::after {
+                left: 15px;
+            }
+        }
+
+        .right {
+            left: 0%;
+
+            &::after {
+                left: 15px;
+            }
+        }
+    }
+}
