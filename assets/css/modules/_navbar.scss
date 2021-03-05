@@ -21,6 +21,7 @@
 			border: unset;
 			background-color: unset;
 			font-size: 30px;
+			cursor: pointer;
 	
 			i {
 				color: #0B315E;
@@ -59,6 +60,8 @@
 
 @media (max-width: 1015px) {
 	.navbar {
+		padding-top: 25px;
+		padding-bottom: 25px;
 		flex-direction: column;
 
 		.nav-main {

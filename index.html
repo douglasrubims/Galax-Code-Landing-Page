@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DevCode</title>
+	<title>GalaxCode</title>
 	<link rel="stylesheet" href="assets/fontawesome/css/all.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<!-- Primary #0B315E -->
@@ -18,7 +18,7 @@
 	<div class="navbar">
 		<div class="nav-main" id="navbar-main">
 			<img src="https://www.seekpng.com/png/full/79-790223_text-circle-png-red-circle-around-text.png"
-				class="logo" title="DevCode" alt="DevCode Logo">
+				class="logo" title="GalaxCode" alt="GalaxCode Logo">
 			<button class="responsivity-button" id="btn-menu"><i class="fas fa-bars"></i></button>
 		</div>
 		<div class="nav-menu" id="nav-menu">
@@ -29,8 +29,11 @@
 			<a href="#contacts">Contato</a>
 		</div>
 	</div>
-	<div class="container-blur"></div>
+	
 	<div id="inicio" class="first-container">
+		<div class="container-blur">
+			<img src="assets/svg/Circles-1.svg">
+		</div>
 		<div class="title">
 			<strong>Turbine seu negócio</strong> com nossas soluções digitais!
 		</div>
@@ -44,45 +47,67 @@
 		</div>
 	</div>
 	<div class="second-container">
-		<div class="content-wrapper">
-			<div class="content left" id="services">
-				<div class="info left">
-					<h3>Desenvolvimento de <strong>websites</strong></h3>
+		<div class="second-container-wrapper">
+			<div class="content-wrapper">
+				<div class="content left" id="services">
+					<div class="info left">
+						<h2>Desenvolvimento de <strong>websites</strong></h2>
+					</div>
 				</div>
-			</div>
-			<div class="content right">
-				<div class="info right">
-					<h3>Desenvolvimento de <strong>aplicativos</strong></h3>
+				<div class="content right">
+					<div class="info right">
+						<h2>Desenvolvimento de <strong>apps</strong></h2>
+					</div>
 				</div>
-			</div>
-			<div class="content left">
-				<div class="info left">
-					<h3>Desenvolvimento de <strong>sistemas</strong></h3>
+				<div class="content left">
+					<div class="info left">
+						<h2>Desenvolvimento de <strong>sistemas</strong></h2>
+					</div>
 				</div>
-			</div>
-			<div class="content right">
-				<div class="info right">
-					<h3>Habilidades de Frontend</h3>
+				<div class="content right" id="skills">
+					<div class="info right">
+						<h2>Habilidades de Frontend</h2>
+						<div class="images">
+							<div class="image">
+								<img src="assets/svg/react-js-logo.svg">
+								<strong>React.js</strong>
+							</div>
+							<div class="image">
+								<img src="assets/svg/react-native-app.svg">
+								<strong>React Native</strong>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="content right" id="skills">
-				<div class="info right">
-					<h3>Habilidades</h3>
-					<h4>Frontend</h4>
-					<ul>
-						<li>React</li>
-						<li>React Native</li>
-					</ul>
-					<h4>Backend</h4>
-					<ul>
-						<li>Node.js</li>
-						<li>PHP</li>
-					</ul>
-					<h4>Banco de Dados</h4>
-					<ul>
-						<li>MongoDB</li>
-						<li>SQL</li>
-					</ul>
+				<div class="content left">
+					<div class="info left">
+						<h2>Habilidades de Backend</h2>
+						<div class="images">
+							<div class="image">
+								<img src="assets/svg/php-logo.svg">
+								<strong>PHP</strong>
+							</div>
+							<div class="image">
+								<img src="assets/svg/node-js-logo.svg">
+								<strong>Node.js</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content right">
+					<div class="info right">
+						<h2>Habilidades com Bancos de Dados</h2>
+						<div class="images">
+							<div class="image">
+								<img src="assets/svg/sql.svg">
+								<strong>SQL</strong>
+							</div>
+							<div class="image">
+								<img src="assets/svg/mongodb.svg">
+								<strong>MongoDB</strong>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -92,16 +117,18 @@
 			<div class="about-us">
 
 			</div>
-			<div class="douglas">
+			<div class="member">
+				<img src="" id="douglasrubims">
 				<dl>
 					<dt>Douglas Rubim</dt>
-					<dd>CEO da DevCode</dd>
+					<dd><strong>CEO</strong> da GalaxCode</dd>
 				</dl>
 			</div>
-			<div class="ayres">
+			<div class="member">
+				<img src="" id="AyresMonteiro">
 				<dl>
 					<dt>Ayres Monteiro</dt>
-					<dd>Desenvolvedor Fullstack na DevCode</dd>
+					<dd><strong>Desenvolvedor Fullstack</strong> na GalaxCode</dd>
 				</dl>
 			</div>
 		</div>
@@ -116,7 +143,9 @@
 			<a href="https://wa.me/5532985114895">(32) 9 8511-4895</a>
 		</div>
 	</div>
+
 	<script src="assets/js/landing.js"></script>
+	<script defer="defer" src="assets/js/images.js"></script>
 </body>
 
 </html>
