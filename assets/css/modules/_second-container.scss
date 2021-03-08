@@ -1,5 +1,5 @@
 .second-container-wrapper {
-    background-color: #0b315e;
+    background: linear-gradient(180deg, #0b315e, lighten(#0b315e, 50%));
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
@@ -11,10 +11,10 @@
         content: " ";
         display: flex;
         position: absolute;
-        top: -25px;
+        top: 0;
         left: calc(50% - 25px);
         width: 50px;
-        height: 50px;
+        height: 25px;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
         background-color: #faf5ef;
@@ -25,7 +25,7 @@
 
     &::after {
         top: unset;
-        bottom: -25px;
+        bottom: 0px;
         border-radius: 0;
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
@@ -46,6 +46,26 @@
             bottom: -25px;
             margin-left: calc(50% - 2.5px);
             transition: 0.5s;
+        }
+
+        .content-group-name {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            padding-top: 25px;
+            margin-bottom: 25px;
+
+            h3 {
+                color: #faf5ef;
+                background-color: #0b315e;
+                border: 4px solid #faf5ef;
+                padding: 25px;
+                text-align: center;
+                border-radius: 15px;
+            }
         }
 
         .content {
@@ -77,7 +97,8 @@
                 border-radius: 10px;
                 transition: 0.5s;
 
-                h2, h3 {
+                h2,
+                h3 {
                     width: 100%;
                     text-align: center;
                     padding: 5px;
@@ -116,10 +137,6 @@
                         img {
                             width: 50px;
                             height: 50px;
-                        }
-
-                        strong {
-
                         }
                     }
                 }
@@ -175,7 +192,8 @@
 
 @media screen and (max-width: 1220px) {
     .second-container-wrapper {
-        &::before, &::after {
+        &::before,
+        &::after {
             left: 8.5px;
         }
 
@@ -184,6 +202,14 @@
 
             &::after {
                 margin-left: 31px;
+            }
+
+            .content-group-name {
+                justify-content: flex-start;
+
+                h3 {
+                    margin-left: 5px;
+                }
             }
 
             .content {
@@ -196,6 +222,16 @@
                     border: medium solid #fcfcfd;
                     border-width: 10px 10px 10px 0;
                     border-color: transparent #fcfcfd transparent transparent;
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    h2 {
+                        max-width: 80%;
+                    }
                 }
             }
 

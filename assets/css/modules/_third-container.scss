@@ -1,8 +1,10 @@
 .third-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 750px;
 
     #about-us {
         display: flex;
@@ -21,11 +23,12 @@
             width: 300px;
             height: 100%;
 
-            img {
+            .image {
                 content: " ";
                 width: 150px;
                 height: 150px;
                 border-radius: 75px;
+                background-color: #1F1F1F;
             }
 
             dl {
@@ -37,12 +40,18 @@
                 dt {
                     font-size: 16pt;
                     font-weight: bold;
+                    text-align: center;
                 }
 
                 dd {
                     margin: 0;
                     padding: 0;
                     left: 0;
+                    text-align: center;
+                }
+
+                .quote {
+                    font-style: italic;
                 }
             }
         }

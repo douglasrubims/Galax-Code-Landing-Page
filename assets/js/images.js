@@ -5,13 +5,13 @@ async function getImage(id) {
 
     let obj = await fetch(req);
 
-    console.log({ obj });
-
     obj = await obj.json();
 
-    console.log(obj);
+    let domElement = document.getElementById(id);
+    console.log(domElement);
 
-    document.getElementById(id).src = obj.avatar_url;
+    domElement.style.background = "url('" + obj.avatar_url + "')";
+    domElement.style.backgroundSize = "100% 100%";
 }
 
 async function setImages() {

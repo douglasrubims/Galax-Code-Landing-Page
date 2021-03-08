@@ -7,8 +7,10 @@
 	align-items: center;
 	justify-content: center;
 	padding-bottom: 150px;
-	background-color: rgba(250, 245, 239, 90%);
-	z-index: 10;
+	z-index: 11;
+	background: url('../jpg/blue-galaxy.jpg');
+	background-size: 100% 100%;
+	transition: 1s;
 
 	.container-blur {
 		width: 100%;
@@ -18,15 +20,18 @@
 		justify-content: flex-start;
 		position: absolute;
 		filter: blur(8px);
-		z-index: 9;
+		z-index: 6;
 
-		img {
+		.image {
 			width: 400px;
 			height: 400px;
 			margin-left: 200px;
 			animation: spinAnimation 2s infinite;
 			max-width: 1200px;
 			max-height: 1200px;
+			position: absolute;
+			background: url('../svg/Circles-1.svg');
+			background-size: 100% 100%;
 		}
 	}
 
@@ -58,7 +63,6 @@
 		z-index: 10;
 
 		.button {
-			width: 280px;
 			display: inline-block;
 			padding: 10px;
 			border: 2px solid rgba(250, 245, 239, 90%);
@@ -83,6 +87,7 @@
 			border: unset;
 			background-color: #0B315E;
 			color: #FAF5EF;
+			width: 280px;
 
 			strong {
 				text-decoration: none;
@@ -91,7 +96,8 @@
 
 			&:hover {
 				text-decoration: none;
-				background-color: lighten(#0B315E, 20%);
+				background-color: lighten(#0B315E, 20%) !important;
+				border: unset !important;
 			}
 		}
 	}
@@ -99,13 +105,18 @@
 
 @media (max-width: 1015px) {
 	.first-container {
+		background-size: 200% 200%;
+		background-position: center;
+		background-repeat: no-repeat;
 		.container-blur {
 			padding: 0;
 			justify-content: center;
+			margin-top: 10%;
 
-			img {
-				width: 30%;
-				height: 30%;
+			.image {
+				width: 50%;
+				height: 50%;
+				margin-left: -500px !important;
 			}
 		}
 
@@ -121,6 +132,15 @@
 
 		.button-container {
 			flex-direction: column;
+
+			.button {
+				width: 280px;
+
+				&:hover {
+					background-color: darken(#FAF5EF, 5%);
+					border: 2px solid darken(#FAF5EF, 5%);
+				}
+			}
 		}
 	}
 }
