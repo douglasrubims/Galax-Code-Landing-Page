@@ -1,5 +1,4 @@
 .first-container {
-	top: 35px;
 	width: 100%;
 	height: 500px;
 	display: flex;
@@ -11,6 +10,7 @@
 	background: url('../jpg/blue-galaxy.jpg');
 	background-size: 100% 100%;
 	transition: 1s;
+	position: relative;
 
 	.container-blur {
 		width: 100%;
@@ -26,7 +26,7 @@
 		.image {
 			width: 400px;
 			height: 400px;
-			margin-left: 200px;
+			left: 200px;
 			animation: spinAnimation 5s infinite;
 			max-width: 1200px;
 			max-height: 1200px;
@@ -39,6 +39,8 @@
 	.dark-glass-background {
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		border: 3px solid #FAF5EF;
 		background-color: rgba(#FAF5EF, 0.6);
 		padding: 50px;
@@ -114,25 +116,29 @@
 
 @media (max-width: 1015px) {
 	.first-container {
-		background-size: 200% 200%;
+		background-size: 200% 100%;
 		background-position: center;
 		background-repeat: no-repeat;
 
 		.container-blur {
 			padding: 0;
 			justify-content: center;
-			margin-top: 10%;
-			top: 160px;
+			max-height: 100%;
 
 			.image {
 				width: 50%;
 				height: 50%;
-				margin-left: -500px !important;
+				left: 5px;
+				bottom: 25px;
+				background: url('../svg/Circles-1-mobile.svg');
+				background-size: 100% 50%;
 			}
 		}
 
 		.dark-glass-background {
-			margin-top: 150px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
 			padding: 20px;
 			border: unset;
 

@@ -92,7 +92,6 @@ html, body {
 @media (max-width: 1015px) {
   .navbar {
     padding-top: 25px;
-    padding-bottom: 25px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -145,15 +144,18 @@ html, body {
     background-color: #f8f0e7;
     width: 100%;
     padding: 20px;
+    padding-bottom: 0;
   }
   .navbar .show a {
     font-size: 20pt;
     padding: 10px;
   }
+  .navbar .show a:last-child {
+    padding-bottom: 20px;
+  }
 }
 
 .first-container {
-  top: 35px;
   width: 100%;
   height: 500px;
   display: -webkit-box;
@@ -175,6 +177,7 @@ html, body {
   background-size: 100% 100%;
   -webkit-transition: 1s;
   transition: 1s;
+  position: relative;
 }
 
 .first-container .container-blur {
@@ -199,7 +202,7 @@ html, body {
 .first-container .container-blur .image {
   width: 400px;
   height: 400px;
-  margin-left: 200px;
+  left: 200px;
   -webkit-animation: spinAnimation 5s infinite;
           animation: spinAnimation 5s infinite;
   max-width: 1200px;
@@ -217,6 +220,12 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 3px solid #FAF5EF;
   background-color: rgba(250, 245, 239, 0.6);
   padding: 50px;
@@ -301,7 +310,7 @@ html, body {
 
 @media (max-width: 1015px) {
   .first-container {
-    background-size: 200% 200%;
+    background-size: 200% 100%;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -310,16 +319,20 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 10%;
-    top: 160px;
+    max-height: 100%;
   }
   .first-container .container-blur .image {
     width: 50%;
     height: 50%;
-    margin-left: -500px !important;
+    left: 5px;
+    bottom: 25px;
+    background: url("../svg/Circles-1-mobile.svg");
+    background-size: 100% 50%;
   }
   .first-container .dark-glass-background {
-    margin-top: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     padding: 20px;
     border: unset;
   }
