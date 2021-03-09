@@ -14,90 +14,99 @@
 
 	.container-blur {
 		width: 100%;
-		height: 100%;
+		height: 500px;
+		top: 130px;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
 		position: absolute;
-		filter: blur(8px);
+		filter: blur(5px);
 		z-index: 6;
 
 		.image {
 			width: 400px;
 			height: 400px;
 			margin-left: 200px;
-			animation: spinAnimation 2s infinite;
+			animation: spinAnimation 5s infinite;
 			max-width: 1200px;
 			max-height: 1200px;
 			position: absolute;
 			background: url('../svg/Circles-1.svg');
-			background-size: 100% 100%;
+			background-size: 100% 20%;
 		}
 	}
 
-	.title {
-		padding: 20px;
-		font-size: 30pt;
-		z-index: 10;
-
-		strong {
-			font-size: 35pt; 
-		}
-	}
-
-	.subtitle {
-		color: lighten(#1F1F1F, 10%);
-		padding: 10px;
-		padding-bottom: 30px;
-		font-size: 20pt;
-		text-align: justify;
-		z-index: 10;
-	}
-
-	.button-container {
+	.dark-glass-background {
 		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		gap: 20px;
-		z-index: 10;
+		flex-direction: column;
+		border: 3px solid #FAF5EF;
+		background-color: rgba(#FAF5EF, 0.6);
+		padding: 50px;
 
-		.button {
-			display: inline-block;
-			padding: 10px;
-			border: 2px solid rgba(250, 245, 239, 90%);
-			border-radius: 5px;
-			background-color: transparent;
-			transition: all .5s ease-out;
-			font-size: 18pt;
-			cursor: pointer !important;
-
+		.title {
+			padding: 20px;
+			font-size: 30pt;
+			z-index: 10;
+	
 			strong {
-				border: none;
-				text-decoration: none;
-				color: #0B315E;
-			}
-
-			&:hover {
-				background-color: darken(#FAF5EF, 5%); 
+				font-size: 35pt; 
 			}
 		}
-
-		.click-me {
-			border: unset;
-			background-color: #0B315E;
-			color: #FAF5EF;
-			width: 280px;
-
-			strong {
-				text-decoration: none;
+	
+		.subtitle {
+			color: lighten(#1F1F1F, 10%);
+			padding: 10px;
+			padding-bottom: 30px;
+			font-size: 20pt;
+			text-align: justify;
+			z-index: 10;
+		}
+	
+		.button-container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			z-index: 10;
+	
+			.button {
+				display: inline-block;
+				padding: 10px;
+				border: 2px solid rgba(250, 245, 239, 90%);
+				border-radius: 5px;
+				background-color: transparent;
+				transition: all .5s ease-out;
+				font-size: 18pt;
+				cursor: pointer !important;
+	
+				strong {
+					border: none;
+					text-decoration: none;
+					color: #0B315E;
+				}
+	
+				&:hover {
+					background-color: darken(#FAF5EF, 5%); 
+				}
+			}
+	
+			.click-me {
+				border: unset;
+				background-color: #0B315E;
 				color: #FAF5EF;
-			} 
-
-			&:hover {
-				text-decoration: none;
-				background-color: lighten(#0B315E, 20%) !important;
-				border: unset !important;
+				width: 280px;
+	
+				strong {
+					text-decoration: none;
+					color: #FAF5EF;
+				} 
+	
+				&:hover {
+					text-decoration: none;
+					background-color: lighten(#0B315E, 20%) !important;
+					border: unset !important;
+				}
 			}
 		}
 	}
@@ -108,10 +117,12 @@
 		background-size: 200% 200%;
 		background-position: center;
 		background-repeat: no-repeat;
+
 		.container-blur {
 			padding: 0;
 			justify-content: center;
 			margin-top: 10%;
+			top: 160px;
 
 			.image {
 				width: 50%;
@@ -120,25 +131,31 @@
 			}
 		}
 
-		.title  {
-			text-align: center;
-		}
-
-		.subtitle {
+		.dark-glass-background {
+			margin-top: 150px;
 			padding: 20px;
-			padding-bottom: 30px;
-			text-align: center;
-		}
+			border: unset;
 
-		.button-container {
-			flex-direction: column;
+			.title  {
+				text-align: center;
+			}
 
-			.button {
-				width: 280px;
+			.subtitle {
+				padding: 20px;
+				padding-bottom: 30px;
+				text-align: center;
+			}
 
-				&:hover {
-					background-color: darken(#FAF5EF, 5%);
-					border: 2px solid darken(#FAF5EF, 5%);
+			.button-container {
+				flex-direction: column;
+
+				.button {
+					width: 280px;
+
+					&:hover {
+						background-color: darken(#FAF5EF, 5%);
+						border: 2px solid darken(#FAF5EF, 5%);
+					}
 				}
 			}
 		}
@@ -147,10 +164,10 @@
 
 @keyframes spinAnimation {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(180deg);
 	}
 
 	to {
-		transform: rotate(360deg);
+		transform: rotate(900deg);
 	}
 }

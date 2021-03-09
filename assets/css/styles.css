@@ -179,7 +179,8 @@ html, body {
 
 .first-container .container-blur {
   width: 100%;
-  height: 100%;
+  height: 500px;
+  top: 130px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,8 +191,8 @@ html, body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   position: absolute;
-  -webkit-filter: blur(8px);
-          filter: blur(8px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   z-index: 6;
 }
 
@@ -199,26 +200,39 @@ html, body {
   width: 400px;
   height: 400px;
   margin-left: 200px;
-  -webkit-animation: spinAnimation 2s infinite;
-          animation: spinAnimation 2s infinite;
+  -webkit-animation: spinAnimation 5s infinite;
+          animation: spinAnimation 5s infinite;
   max-width: 1200px;
   max-height: 1200px;
   position: absolute;
   background: url("../svg/Circles-1.svg");
-  background-size: 100% 100%;
+  background-size: 100% 20%;
 }
 
-.first-container .title {
+.first-container .dark-glass-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px solid #FAF5EF;
+  background-color: rgba(250, 245, 239, 0.6);
+  padding: 50px;
+}
+
+.first-container .dark-glass-background .title {
   padding: 20px;
   font-size: 30pt;
   z-index: 10;
 }
 
-.first-container .title strong {
+.first-container .dark-glass-background .title strong {
   font-size: 35pt;
 }
 
-.first-container .subtitle {
+.first-container .dark-glass-background .subtitle {
   color: #393939;
   padding: 10px;
   padding-bottom: 30px;
@@ -227,7 +241,7 @@ html, body {
   z-index: 10;
 }
 
-.first-container .button-container {
+.first-container .dark-glass-background .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +259,7 @@ html, body {
   z-index: 10;
 }
 
-.first-container .button-container .button {
+.first-container .dark-glass-background .button-container .button {
   display: inline-block;
   padding: 10px;
   border: 2px solid #faf5ef;
@@ -257,29 +271,29 @@ html, body {
   cursor: pointer !important;
 }
 
-.first-container .button-container .button strong {
+.first-container .dark-glass-background .button-container .button strong {
   border: none;
   text-decoration: none;
   color: #0B315E;
 }
 
-.first-container .button-container .button:hover {
+.first-container .dark-glass-background .button-container .button:hover {
   background-color: #f4e9dc;
 }
 
-.first-container .button-container .click-me {
+.first-container .dark-glass-background .button-container .click-me {
   border: unset;
   background-color: #0B315E;
   color: #FAF5EF;
   width: 280px;
 }
 
-.first-container .button-container .click-me strong {
+.first-container .dark-glass-background .button-container .click-me strong {
   text-decoration: none;
   color: #FAF5EF;
 }
 
-.first-container .button-container .click-me:hover {
+.first-container .dark-glass-background .button-container .click-me:hover {
   text-decoration: none;
   background-color: #1661b9 !important;
   border: unset !important;
@@ -297,30 +311,36 @@ html, body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 10%;
+    top: 160px;
   }
   .first-container .container-blur .image {
     width: 50%;
     height: 50%;
     margin-left: -500px !important;
   }
-  .first-container .title {
+  .first-container .dark-glass-background {
+    margin-top: 150px;
+    padding: 20px;
+    border: unset;
+  }
+  .first-container .dark-glass-background .title {
     text-align: center;
   }
-  .first-container .subtitle {
+  .first-container .dark-glass-background .subtitle {
     padding: 20px;
     padding-bottom: 30px;
     text-align: center;
   }
-  .first-container .button-container {
+  .first-container .dark-glass-background .button-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .first-container .button-container .button {
+  .first-container .dark-glass-background .button-container .button {
     width: 280px;
   }
-  .first-container .button-container .button:hover {
+  .first-container .dark-glass-background .button-container .button:hover {
     background-color: #f4e9dc;
     border: 2px solid #f4e9dc;
   }
@@ -328,23 +348,23 @@ html, body {
 
 @-webkit-keyframes spinAnimation {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
   }
 }
 
 @keyframes spinAnimation {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
   }
 }
 
@@ -359,7 +379,7 @@ html, body {
 }
 
 .second-container-wrapper::before, .second-container-wrapper::after {
-  content: " ";
+  content: "";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,7 +398,7 @@ html, body {
 
 .second-container-wrapper::after {
   top: unset;
-  bottom: 0px;
+  bottom: -1px;
   border-radius: 0;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -396,8 +416,8 @@ html, body {
   position: absolute;
   width: 5px;
   background-color: #faf5ef;
-  top: -25px;
-  bottom: -25px;
+  top: -27px;
+  bottom: -27px;
   margin-left: calc(50% - 2.5px);
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -416,15 +436,15 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10;
-  padding-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 27px;
+  margin-bottom: 27px;
 }
 
 .second-container-wrapper .content-wrapper .content-group-name h3 {
   color: #faf5ef;
   background-color: #0b315e;
   border: 4px solid #faf5ef;
-  padding: 25px;
+  padding: 27px;
   text-align: center;
   border-radius: 15px;
 }
@@ -532,7 +552,7 @@ html, body {
 }
 
 .second-container-wrapper .content-wrapper .content .left::before {
-  content: " ";
+  content: "";
   height: 0;
   position: absolute;
   top: 25px;
@@ -546,7 +566,7 @@ html, body {
 }
 
 .second-container-wrapper .content-wrapper .content .right::before {
-  content: " ";
+  content: "";
   height: 0;
   position: absolute;
   top: 25px;
@@ -671,7 +691,7 @@ html, body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  gap: 20px;
+  gap: 150px;
   padding: 50px;
 }
 
@@ -694,11 +714,16 @@ html, body {
 }
 
 .third-container #about-us .member .image {
-  content: " ";
   width: 150px;
   height: 150px;
   border-radius: 75px;
   background-color: #1F1F1F;
+}
+
+.third-container #about-us .member .quote {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
 }
 
 .third-container #about-us .member dl {
