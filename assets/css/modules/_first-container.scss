@@ -36,7 +36,7 @@
 		}
 	}
 
-	.dark-glass-background {
+	.white-glass-background {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -48,6 +48,7 @@
 		.title {
 			padding: 20px;
 			font-size: 30pt;
+			text-align: center;
 			z-index: 10;
 	
 			strong {
@@ -135,16 +136,12 @@
 			}
 		}
 
-		.dark-glass-background {
+		.white-glass-background {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			padding: 20px;
 			border: unset;
-
-			.title  {
-				text-align: center;
-			}
 
 			.subtitle {
 				padding: 20px;

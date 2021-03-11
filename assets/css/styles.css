@@ -15,8 +15,10 @@ html, body {
 }
 
 .navbar {
-  margin: 20px;
-  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +93,6 @@ html, body {
 
 @media (max-width: 1015px) {
   .navbar {
-    padding-top: 25px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -212,7 +213,7 @@ html, body {
   background-size: 100% 20%;
 }
 
-.first-container .dark-glass-background {
+.first-container .white-glass-background {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,17 +232,18 @@ html, body {
   padding: 50px;
 }
 
-.first-container .dark-glass-background .title {
+.first-container .white-glass-background .title {
   padding: 20px;
   font-size: 30pt;
+  text-align: center;
   z-index: 10;
 }
 
-.first-container .dark-glass-background .title strong {
+.first-container .white-glass-background .title strong {
   font-size: 35pt;
 }
 
-.first-container .dark-glass-background .subtitle {
+.first-container .white-glass-background .subtitle {
   color: #393939;
   padding: 10px;
   padding-bottom: 30px;
@@ -250,7 +252,7 @@ html, body {
   z-index: 10;
 }
 
-.first-container .dark-glass-background .button-container {
+.first-container .white-glass-background .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +270,7 @@ html, body {
   z-index: 10;
 }
 
-.first-container .dark-glass-background .button-container .button {
+.first-container .white-glass-background .button-container .button {
   display: inline-block;
   padding: 10px;
   border: 2px solid #faf5ef;
@@ -280,29 +282,29 @@ html, body {
   cursor: pointer !important;
 }
 
-.first-container .dark-glass-background .button-container .button strong {
+.first-container .white-glass-background .button-container .button strong {
   border: none;
   text-decoration: none;
   color: #0B315E;
 }
 
-.first-container .dark-glass-background .button-container .button:hover {
+.first-container .white-glass-background .button-container .button:hover {
   background-color: #f4e9dc;
 }
 
-.first-container .dark-glass-background .button-container .click-me {
+.first-container .white-glass-background .button-container .click-me {
   border: unset;
   background-color: #0B315E;
   color: #FAF5EF;
   width: 280px;
 }
 
-.first-container .dark-glass-background .button-container .click-me strong {
+.first-container .white-glass-background .button-container .click-me strong {
   text-decoration: none;
   color: #FAF5EF;
 }
 
-.first-container .dark-glass-background .button-container .click-me:hover {
+.first-container .white-glass-background .button-container .click-me:hover {
   text-decoration: none;
   background-color: #1661b9 !important;
   border: unset !important;
@@ -329,30 +331,27 @@ html, body {
     background: url("../svg/Circles-1-mobile.svg");
     background-size: 100% 50%;
   }
-  .first-container .dark-glass-background {
+  .first-container .white-glass-background {
     position: absolute;
     top: 0;
     bottom: 0;
     padding: 20px;
     border: unset;
   }
-  .first-container .dark-glass-background .title {
-    text-align: center;
-  }
-  .first-container .dark-glass-background .subtitle {
+  .first-container .white-glass-background .subtitle {
     padding: 20px;
     padding-bottom: 30px;
   }
-  .first-container .dark-glass-background .button-container {
+  .first-container .white-glass-background .button-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .first-container .dark-glass-background .button-container .button {
+  .first-container .white-glass-background .button-container .button {
     width: 280px;
   }
-  .first-container .dark-glass-background .button-container .button:hover {
+  .first-container .white-glass-background .button-container .button:hover {
     background-color: #f4e9dc;
     border: 2px solid #f4e9dc;
   }
@@ -781,18 +780,15 @@ html, body {
 
 .footer {
   width: 100%;
-  min-height: 300px;
+  min-height: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: url("../svg/undraw_contact_us_15o2.svg"), #1F1F1F;
-  background-position: 10% 20%;
+  background-position: 10% 150%;
   background-size: contain;
   background-repeat: no-repeat;
   color: #FAF5EF;
@@ -851,5 +847,14 @@ html, body {
 .footer #contacts a:hover {
   background-color: #128C7E;
   border-color: #128C7E;
+}
+
+@media (max-width: 1015px) {
+  .footer #contacts {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 50px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

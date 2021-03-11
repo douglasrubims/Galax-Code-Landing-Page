@@ -1,11 +1,10 @@
 .footer {
     width: 100%;
-    min-height: 300px;
+    min-height: 320px;
     display: flex;
     justify-content: center;
-    align-items: center;
     background: url('../svg/undraw_contact_us_15o2.svg'), #1F1F1F;
-    background-position: 10% 20%;
+    background-position: 10% 150%;
     background-size: contain;
     background-repeat: no-repeat;
     color: #FAF5EF;
@@ -44,6 +43,15 @@
                 background-color: #128C7E;
                 border-color: #128C7E;
             }
+        }
+    }
+}
+
+@media (max-width: 1015px) {
+    .footer {
+        #contacts {
+            justify-content: flex-start;
+            margin-top: 50px;
         }
     }
 }
