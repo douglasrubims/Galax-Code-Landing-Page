@@ -2,10 +2,6 @@
 
 body {
 	margin: 0;
-	padding: 0;
-	width: 100%;
-	max-width: 100%;
-	height: 100%;
 	font-family: 'Roboto', sans-serif;
 	color: #0B315E;
 	background-color: #0b315e;
@@ -13,8 +9,5 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	color: #FAF5EF;
-}
-
-html, body {
 	scroll-behavior: smooth;
 }
