@@ -7,8 +7,8 @@
 	justify-content: center;
 	padding-bottom: 150px;
 	z-index: 11;
-	background: url('../jpg/blue-galaxy.jpg');
-	background-size: 100% 100%;
+	// background: url('../jpg/blue-galaxy.jpg');
+	// background-size: 100% 100%;
 	transition: 1s;
 	position: relative;
 
@@ -20,14 +20,15 @@
 		align-items: center;
 		justify-content: flex-start;
 		position: absolute;
-		filter: blur(5px);
+		filter: blur(8px);
 		z-index: 6;
 
 		.image {
 			width: 400px;
 			height: 400px;
+			bottom: 150px;
 			left: 200px;
-			animation: spinAnimation 5s infinite;
+			animation: spinAnimation 15s infinite;
 			max-width: 1200px;
 			max-height: 1200px;
 			position: absolute;
@@ -41,8 +42,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		border: 3px solid #FAF5EF;
-		background-color: rgba(#FAF5EF, 0.6);
+		border: 3px solid #0b315e;
+		background-color: rgba(lighten(#0b315e, 5%), 0.6);
 		padding: 50px;
 
 		.title {
@@ -57,7 +58,7 @@
 		}
 	
 		.subtitle {
-			color: lighten(#1F1F1F, 10%);
+			color: lighten(#FAF5EF, 10%);
 			padding: 10px;
 			padding-bottom: 30px;
 			font-size: 20pt;
@@ -72,25 +73,29 @@
 			justify-content: center;
 			gap: 20px;
 			z-index: 10;
-	
+
 			.button {
 				display: inline-block;
 				padding: 10px;
-				border: 2px solid rgba(250, 245, 239, 90%);
 				border-radius: 5px;
-				background-color: transparent;
+				background-color: #FAF5EF;
 				transition: all .5s ease-out;
 				font-size: 18pt;
+				width: 280px;
 				cursor: pointer !important;
-	
+
 				strong {
 					border: none;
 					text-decoration: none;
 					color: #0B315E;
 				}
-	
+
 				&:hover {
-					background-color: darken(#FAF5EF, 5%); 
+					background-color: darken(#FFFFFF, 20%);
+				}
+
+				&:focus {
+					outline-style: unset;
 				}
 			}
 	
@@ -98,7 +103,6 @@
 				border: unset;
 				background-color: #0B315E;
 				color: #FAF5EF;
-				width: 280px;
 	
 				strong {
 					text-decoration: none;
