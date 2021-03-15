@@ -11,6 +11,27 @@ body {
   scroll-behavior: smooth;
 }
 
+.topic {
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.topic::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background-color: #ED870A;
+}
+
+scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 .navbar {
   padding-top: 10px;
   padding-left: 20px;
@@ -29,6 +50,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .navbar .container {
@@ -307,7 +330,8 @@ body {
 }
 
 .first-container .white-glass-background .button-container .button {
-  display: inline-block;
+  display: block;
+  text-align: center;
   padding: 10px;
   border-radius: 5px;
   background-color: #FAF5EF;
@@ -316,11 +340,12 @@ body {
   font-size: 18pt;
   width: 280px;
   cursor: pointer !important;
+  text-decoration: unset;
 }
 
 .first-container .white-glass-background .button-container .button strong {
-  border: none;
-  text-decoration: none;
+  border: unset;
+  text-decoration: unset;
   color: #0B315E;
 }
 
@@ -339,12 +364,12 @@ body {
 }
 
 .first-container .white-glass-background .button-container .click-me strong {
-  text-decoration: none;
+  text-decoration: unset;
   color: #FAF5EF;
 }
 
 .first-container .white-glass-background .button-container .click-me:hover {
-  text-decoration: none;
+  text-decoration: unset;
   background-color: #1661b9 !important;
   border: unset !important;
 }
@@ -496,13 +521,15 @@ body {
   margin-bottom: 27px;
 }
 
-.second-container-wrapper .content-wrapper .content-group-name h3 {
-  color: #faf5ef;
-  background-color: #0b315e;
-  border: 4px solid #faf5ef;
-  padding: 27px;
+.second-container-wrapper .content-wrapper .content-group-name .topic-div {
+  color: #FAF5EF;
+  background: linear-gradient(-45deg, rgba(16, 73, 140, 0.8), rgba(11, 49, 94, 0.8)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%230b315e' stroke-width='0.23' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cuse fill='%23103561' href='%23s' y='2'/%3E%3Cuse fill='%23103561' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23153964' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23153964' href='%23s'/%3E%3Cuse fill='%231a3d68' href='%23s' x='2'/%3E%3Cuse fill='%231a3d68' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%231f416b'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%231f416b'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%2323466e'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%230b315e'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23284a71'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23ed870a'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23ed870a'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(10) translate(-900 -675)'%3E%3Cg fill='%23ed870a'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  border: 3px solid #FAF5EF;
+  padding: 15px 50px;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .second-container-wrapper .content-wrapper .content {
@@ -528,7 +555,7 @@ body {
   width: 25px;
   height: 25px;
   background-color: #0b315e;
-  border: 4px solid #faf5ef;
+  border: 4px solid #FAF5EF;
   top: 30px;
   border-radius: 50%;
   z-index: 8;
@@ -538,7 +565,7 @@ body {
 
 .second-container-wrapper .content-wrapper .content .info {
   width: 100%;
-  background-color: #faf5ef;
+  background-color: rgba(250, 245, 239, 0.8);
   position: relative;
   border-radius: 10px;
   -webkit-transition: 0.5s;
@@ -608,6 +635,12 @@ body {
   height: 50px;
 }
 
+.second-container-wrapper .content-wrapper .content .info:hover {
+  background-color: #FAF5EF;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .second-container-wrapper .content-wrapper .content .left::before {
   content: "";
   height: 0;
@@ -617,9 +650,19 @@ body {
   right: 0;
   left: 100%;
   z-index: 1;
-  border: medium solid #faf5ef;
+  border: medium solid rgba(250, 245, 239, 0.8);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #faf5ef;
+  border-color: transparent transparent transparent rgba(250, 245, 239, 0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.second-container-wrapper .content-wrapper .content .left:hover::before {
+  border: medium solid #FAF5EF;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #FAF5EF;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .second-container-wrapper .content-wrapper .content .right::before {
@@ -630,9 +673,19 @@ body {
   width: 0;
   right: 100%;
   z-index: 1;
-  border: medium solid #faf5ef;
+  border: medium solid rgba(250, 245, 239, 0.8);
   border-width: 10px 10px 10px 10px;
-  border-color: transparent #faf5ef transparent transparent;
+  border-color: transparent rgba(250, 245, 239, 0.8) transparent transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.second-container-wrapper .content-wrapper .content .right:hover::before {
+  border: medium solid #FAF5EF;
+  border-width: 10px 10px 10px 10px;
+  border-color: transparent #FAF5EF transparent transparent;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .second-container-wrapper .content-wrapper > .left::after {
@@ -732,7 +785,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  min-height: 750px;
+  height: 500px;
+}
+
+.third-container span {
+  font-size: 25px;
 }
 
 .third-container #about-us {
@@ -815,6 +872,9 @@ body {
 }
 
 @media (max-width: 1080px) {
+  .third-container {
+    height: 750px;
+  }
   .third-container #about-us {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -840,7 +900,7 @@ body {
   color: #FAF5EF;
 }
 
-.footer #contacts {
+.footer #contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,11 +914,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 20pt;
+  font-size: 25px;
   gap: 20px;
 }
 
-.footer #contacts a {
+.footer #contact a {
   border: 2px solid #075E54;
   padding: 10px;
   border-radius: 5px;
@@ -867,8 +927,8 @@ body {
   color: #FAF5EF;
   width: 280px;
   text-align: center;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,12 +945,12 @@ body {
   gap: 10px;
 }
 
-.footer #contacts a #whatsapp-logo {
+.footer #contact a #whatsapp-logo {
   width: 25px;
   height: 25px;
 }
 
-.footer #contacts a:hover {
+.footer #contact a:hover {
   background-color: #128C7E;
   border-color: #128C7E;
 }

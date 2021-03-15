@@ -75,7 +75,8 @@
 			z-index: 10;
 
 			.button {
-				display: inline-block;
+				display: block;
+				text-align: center;
 				padding: 10px;
 				border-radius: 5px;
 				background-color: #FAF5EF;
@@ -83,10 +84,11 @@
 				font-size: 18pt;
 				width: 280px;
 				cursor: pointer !important;
+				text-decoration: unset;
 
 				strong {
-					border: none;
-					text-decoration: none;
+					border: unset;
+					text-decoration: unset;
 					color: #0B315E;
 				}
 
@@ -105,12 +107,12 @@
 				color: #FAF5EF;
 	
 				strong {
-					text-decoration: none;
+					text-decoration: unset;
 					color: #FAF5EF;
 				} 
 	
 				&:hover {
-					text-decoration: none;
+					text-decoration: unset;
 					background-color: lighten(#0B315E, 20%) !important;
 					border: unset !important;
 				}

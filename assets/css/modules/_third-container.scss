@@ -4,7 +4,11 @@
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	min-height: 750px;
+	height: 500px;
+
+	span {
+		font-size: 25px;
+	}
 
 	#about-us {
 		display: flex;
@@ -64,6 +68,8 @@
 
 @media (max-width: 1080px) {
 	.third-container {
+		height: 750px;
+
 		#about-us {
 			flex-direction: column;
 			gap: 30px;
