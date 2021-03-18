@@ -9,6 +9,7 @@ body {
   background-size: cover;
   color: #FAF5EF;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .topic {
@@ -39,19 +40,32 @@ scroll-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  font-size: 18px;
+  background-color: rgba(250, 245, 239, 0.1);
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+.navbar .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 40px;
+  color: #4b94ea;
+}
+
+.navbar .title strong {
+  margin-top: 13px;
+  font-size: 20px;
+  color: #FAF5EF;
 }
 
 .navbar .container {
@@ -193,25 +207,25 @@ scroll-container {
 }
 
 @media (min-width: 576px) {
-  .container {
+  .navbar .container {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .container {
+  .navbar .container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .container {
+  .navbar .container {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container {
+  .navbar .container {
     max-width: 1140px;
   }
 }
@@ -295,20 +309,16 @@ scroll-container {
   padding: 20px;
   font-size: 30pt;
   text-align: center;
-  z-index: 10;
-}
-
-.first-container .white-glass-background .title strong {
-  font-size: 35pt;
+  text-transform: uppercase;
 }
 
 .first-container .white-glass-background .subtitle {
-  color: white;
+  color: #b1b1b1;
   padding: 10px;
   padding-bottom: 30px;
   font-size: 20pt;
   text-align: center;
-  z-index: 10;
+  text-transform: uppercase;
 }
 
 .first-container .white-glass-background .button-container {
@@ -341,12 +351,12 @@ scroll-container {
   width: 280px;
   cursor: pointer !important;
   text-decoration: unset;
+  color: #0B315E;
 }
 
 .first-container .white-glass-background .button-container .button strong {
   border: unset;
   text-decoration: unset;
-  color: #0B315E;
 }
 
 .first-container .white-glass-background .button-container .button:hover {
@@ -572,16 +582,14 @@ scroll-container {
   transition: 0.5s;
 }
 
-.second-container-wrapper .content-wrapper .content .info h2,
-.second-container-wrapper .content-wrapper .content .info h3 {
+.second-container-wrapper .content-wrapper .content .info h2, .second-container-wrapper .content-wrapper .content .info h3 {
   width: 100%;
   text-align: center;
   padding: 5px;
   font-size: 16pt;
 }
 
-.second-container-wrapper .content-wrapper .content .info h2 strong,
-.second-container-wrapper .content-wrapper .content .info h3 strong {
+.second-container-wrapper .content-wrapper .content .info h2 strong, .second-container-wrapper .content-wrapper .content .info h3 strong {
   color: #0b315e;
   font-size: 18pt;
 }
@@ -788,11 +796,28 @@ scroll-container {
   height: 500px;
 }
 
-.third-container span {
+.third-container #team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+.third-container #team span {
   font-size: 25px;
 }
 
-.third-container #about-us {
+.third-container #team #team-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,7 +834,7 @@ scroll-container {
   padding: 50px;
 }
 
-.third-container #about-us .member {
+.third-container #team #team-container .member {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,20 +852,20 @@ scroll-container {
   height: 100%;
 }
 
-.third-container #about-us .member .image {
+.third-container #team #team-container .member .image {
   width: 150px;
   height: 150px;
   border-radius: 75px;
   background-color: #1F1F1F;
 }
 
-.third-container #about-us .member .quote {
+.third-container #team #team-container .member .quote {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
 }
 
-.third-container #about-us .member dl {
+.third-container #team #team-container .member dl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,20 +879,20 @@ scroll-container {
   gap: 20px;
 }
 
-.third-container #about-us .member dl dt {
+.third-container #team #team-container .member dl dt {
   font-size: 16pt;
   font-weight: bold;
   text-align: center;
 }
 
-.third-container #about-us .member dl dd {
+.third-container #team #team-container .member dl dd {
   margin: 0;
   padding: 0;
   left: 0;
   text-align: center;
 }
 
-.third-container #about-us .member dl .quote {
+.third-container #team #team-container .member dl .quote {
   font-style: italic;
 }
 
@@ -875,7 +900,7 @@ scroll-container {
   .third-container {
     height: 750px;
   }
-  .third-container #about-us {
+  .third-container #team #team-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -956,7 +981,7 @@ scroll-container {
 }
 
 @media (max-width: 1015px) {
-  .footer #contacts {
+  .footer #contact {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;

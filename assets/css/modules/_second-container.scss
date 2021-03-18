@@ -6,8 +6,7 @@
 	position: relative;
 	width: 100%;
 
-	&::before,
-	&::after {
+	&::before, &::after {
 		content: "";
 		display: flex;
 		position: absolute;
@@ -105,8 +104,7 @@
 				border-radius: 10px;
 				transition: 0.5s;
 
-				h2,
-				h3 {
+				h2, h3 {
 					width: 100%;
 					text-align: center;
 					padding: 5px;
@@ -225,8 +223,7 @@
 
 @media screen and (max-width: 1220px) {
 	.second-container-wrapper {
-		&::before,
-		&::after {
+		&::before, &::after {
 			left: 8.5px;
 		}
 

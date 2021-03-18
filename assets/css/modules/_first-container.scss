@@ -7,8 +7,6 @@
 	justify-content: center;
 	padding-bottom: 150px;
 	z-index: 11;
-	// background: url('../jpg/blue-galaxy.jpg');
-	// background-size: 100% 100%;
 	transition: 1s;
 	position: relative;
 
@@ -50,20 +48,16 @@
 			padding: 20px;
 			font-size: 30pt;
 			text-align: center;
-			z-index: 10;
-	
-			strong {
-				font-size: 35pt; 
-			}
+			text-transform: uppercase;
 		}
 	
 		.subtitle {
-			color: lighten(#FAF5EF, 10%);
+			color: lighten(#0b0b0b, 65%);
 			padding: 10px;
 			padding-bottom: 30px;
 			font-size: 20pt;
 			text-align: center;
-			z-index: 10;
+			text-transform: uppercase;
 		}
 	
 		.button-container {
@@ -85,11 +79,11 @@
 				width: 280px;
 				cursor: pointer !important;
 				text-decoration: unset;
+				color: #0B315E;
 
 				strong {
 					border: unset;
 					text-decoration: unset;
-					color: #0B315E;
 				}
 
 				&:hover {
