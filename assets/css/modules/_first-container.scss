@@ -35,13 +35,12 @@
 		}
 	}
 
-	.white-glass-background {
+	.introduction {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		border: 3px solid #0b315e;
-		background-color: rgba(lighten(#0b315e, 5%), 0.6);
+		border-radius: 5px;
 		padding: 50px;
 
 		.title {
@@ -136,12 +135,13 @@
 			}
 		}
 
-		.white-glass-background {
+		.introduction {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			padding: 20px;
 			border: unset;
+			background: unset;
 
 			.subtitle {
 				padding: 20px;

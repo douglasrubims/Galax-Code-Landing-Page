@@ -1,56 +1,56 @@
 .footer {
-    width: 100%;
-    min-height: 320px;
-    display: flex;
-    justify-content: center;
-    background: url('../svg/undraw_contact_us_15o2.svg'), rgba(#0b315e, 0.8);
-    background-position: 10% 150%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: #FAF5EF;
+	width: 100%;
+	min-height: 320px;
+	display: flex;
+	justify-content: center;
+	background: url('../svg/undraw_contact_us_15o2.svg'), rgba(#FAF5EF, 0.11);
+	background-position: 10% 150%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: #FAF5EF;
 
-    #contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-        gap: 20px;
+	#contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 25px;
+		gap: 20px;
 
-        a {
-            border: 2px solid #075E54;
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none;
-            background-color: #075E54;
-            color: #FAF5EF;
-            width: 280px;
-            text-align: center;
-            transition: 0.5s;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
+		a {
+			border: 2px solid #075E54;
+			padding: 10px;
+			border-radius: 5px;
+			text-decoration: none;
+			background-color: #075E54;
+			color: #FAF5EF;
+			width: 280px;
+			text-align: center;
+			transition: 0.5s;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
 
-            #whatsapp-logo {
-                width: 25px;
-                height: 25px;
-            }
+			#whatsapp-logo {
+				width: 25px;
+				height: 25px;
+			}
 
-            &:hover {
-                background-color: #128C7E;
-                border-color: #128C7E;
-            }
-        }
-    }
+			&:hover {
+				background-color: #128C7E;
+				border-color: #128C7E;
+			}
+		}
+	}
 }
 
 @media (max-width: 1015px) {
-    .footer {
-        #contact {
-            justify-content: flex-start;
-            margin-top: 50px;
-        }
-    }
+	.footer {
+		#contact {
+			justify-content: flex-start;
+			margin-top: 50px;
+		}
+	}
 }
